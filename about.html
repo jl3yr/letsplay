@@ -27,6 +27,14 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+	<script type = "text/javascript">
+
+		function alertbox() {
+			alert("Seeker: Carl Banks\nPet: Buddy\nTime: 2:00PM\nLocation: Charlottesville Local Park\n");
+		}
+		
+		
+	</script>
 
 </head>
 
@@ -80,7 +88,11 @@
             </div>
             <!-- /.row -->
         </div>
-        <!-- /.container -->
+		
+		<center><a href="search.html" class="btn btn-dark btn-lg">Search for a pet!</a></center>
+		<center><img src="../letsplay/img/calender.png" onclick="javascript:alertbox()" height="800px"></a> </center>
+        
+		<!-- /.container -->
     </section>
 
     <!-- Footer -->
@@ -106,6 +118,8 @@
     <!-- Custom Theme JavaScript -->
     <script>
     // Closes the sidebar menu
+	
+		
     $("#menu-close").click(function(e) {
         e.preventDefault();
         $("#sidebar-wrapper").toggleClass("active");
