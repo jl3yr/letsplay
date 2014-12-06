@@ -52,10 +52,10 @@
                 <a href="index.html">Home</a>
             </li>
             <li>
-                <a href="#about">About</a>
+                <a href="#about">Profile</a>
             </li>
             <li>
-                <a href="#services">Services</a>
+                <a href="#services">Search</a>
             </li>
             <li>
                 <a href="#portfolio">Portfolio</a>
@@ -65,43 +65,57 @@
             </li>
         </ul>
     </nav>
- 
+		<div class="top">
+	<h1><img src="../letsplay/img/letsplay.png" height="75px">    Lets Play!</h1>
+	</center> 
 				
 
  <!-- About -->
     <section id="about" class="about">
         <div class="container">
-		<div class="top">
-	<h1><img src="../letsplay/img/letsplay.png" height="75px">    Lets Play!</h1>
-	</center>
+
 	</div>
-		<h2 class="user">
-			<img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="../letsplay/img/profile-pic.jpg" data-holder-rendered="true" style="width: 60px; height: 60px;">
-			<span class="page-header">Lauren C.</span>
-			<span style=float:right class="page-header-right">Owner Rating &nbsp&nbsp&nbsp <img class="img-thumbnail" alt="5stars" src="../letsplay/img/5stars.png" style="width: 80px; height: 40px;"></span>
-			<br>
-			<p style=float:right class="page-header-right"> Seeker Rating &nbsp&nbsp&nbsp <img class="img-thumbnail" alt="5stars" src="../letsplay/img/5stars.png" style="width: 80px; height: 40px;"></p>
+		<center>
+		Pet: <select>
+		<option value="dog">Dog</option>
+		<option value="cat">Cat</option>
+		<option value="bunny">Bunny</option>
+		<option value="hamster">Hamster</option>
+		</select>
+<br><br>
+		Distance: <select>
+		<option value="1">Within 5 Miles</option>
+		<option value="5">6-10 Miles</option>
+		<option value="10">11-15 Miles</option>
+		<option value="15">More than 16 Miles</option>
+		</select>
+<br>	<br>
+	Price (Per half hour): <select>
+		<option value="5">$5-10</option>
+		<option value="11">$11-15</option>
+		<option value="16">$16-20</option>
+		<option value="21">More than $21</option>
+		</select>
+	<br>	<br>
+		<a href="about.html" class="btn btn-dark btn-lg">Search for a pet!</a>
+		
+		</center>
 			
 			
 			
 		</h2>
             <div class="row">
-                <div class="col-lg-12 text-left">
-                    <h2>About Lauren</h2>
-                    <p class="lead">I am from the Charlottesville area and own <br> a wonderful Golden Retriever named Buddy. <br> We'd love to meet you!</p>
-                </div>
+              
             </div>
             <!-- /.row -->
         </div>
 		
-		<center><a href="search.html" class="btn btn-dark btn-lg">Search for a pet!</a> <a href="requests.html" class="btn btn-dark btn-lg">View Appointment Requests</a></center> <br>
-		<center><img src="../letsplay/img/calender.png" onclick="javascript:alertbox()" height="800px"></a> </center>
+		
         
 		<!-- /.container -->
     </section>
 
-
-
+   
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
