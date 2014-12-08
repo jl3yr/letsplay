@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Stylish Portfolio - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<script type="text/javascript">
+		function price() {
+			document.getElementById(1).innerHTML = "Kate's rate + appointment request fee: $9"; 
+		}
+		function request() {
+			
+			alert("Request has been sent!");
+			 
+		}
+</script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top">Start Bootstrap</a>
+            </li>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#services">Services</a>
+            </li>
+            <li>
+                <a href="#portfolio">Portfolio</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+ 
+				
+<div class="top">
+	<h1><img src="../letsplay/img/letsplay.png" height="75px">    Lets Play!</h1>
+	</div>
+
+    <section id="appointment" class="appointment">
+        <div class="container">
+		
+		<h2 class="user">
+			<span><center><h1>Play with Kate!</h1></center></span>
+			<br><br>
+
+			<span style=float:right class="page-header-right">Owner Rating &nbsp&nbsp&nbsp <img class="img-thumbnail" alt="5stars" src="../letsplay/img/5stars.png" style="width: 80px; height: 40px;"><br>Pet Rating &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <img class="img-thumbnail" alt="5stars" src="../letsplay/img/5stars.png" style="width: 80px; height: 40px;"></span>
+			
+			<img src="../letsplay/img/kate.jpg" height="200px">
+			
+			
+		</h2>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Pet Seeker: Lauren</h2>
+					<h2>Date: <select>
+					<option value="1">May 20, 2015</option></select>
+					<h2>Preferred Time: <select>
+					<option value="1">2:00PM</option></select> to <select>
+					<option value="1">3:00PM</option></select></h2> 
+					<h2>Preferred Location: <input type="text" size="10"></h2> 
+					
+				<a class="btn btn-dark btn-lg" onclick="price()">Get Price Estimate</a>
+				<h2><div id="1"></div></h2>
+				<a class="btn btn-dark btn-lg" onclick="request()">Send Request</a>	
+					
+					
+		</select></h2>
+            </div>
+            <!-- /.row -->
+        </div>
+		
+		<!-- /.container -->
+    </section>
+
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+	
+		
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+
+</body>
+
+</html>
