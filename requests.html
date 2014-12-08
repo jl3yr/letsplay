@@ -26,14 +26,20 @@
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <![endif]-->-
 	<script type = "text/javascript">
 
 		function alertbox() {
 			alert("Seeker: Carl Banks\nPet: Buddy\nTime: 2:00PM\nLocation: Charlottesville Local Park\n");
 		}
 		
-		
+		function deletebox(id) {
+			if (id == 1) {
+				document.getElementById(1).innerHTML = "";
+			} else if(id == 5)	{
+				document.getElementById(1).innerHTML = "";
+				alert("Awaiting Payment Confirmation from Stephen");
+			}
 	</script>
 
 </head>
@@ -80,42 +86,45 @@
 			<span class="page-header">Lauren C.'s Appointment Requests</span>			
 			
 		</h2>
+		</div>
 		<center><img src="../letsplay/img/calender-appointments.png" height="800px"></a> </center>
         
 		<!-- Appointment request boxes start here -->
-		<div class="apptreqbox">
+		<center>
+		<div class="apptreqbox" id="1">
 		<h4><b> Request from Seeker </h4></b>
 		<p> Seeker: Stephen </p>
 		<p>Pet: Buddy</p>
 		<p>Time/Date: 5/9/14 @ 2:00PM</p>
 		<p>Location: The Lawn </p>
-		<a href="requests.html" class="btn btn-dark btn-lg">Approve</a> <a href="requests.html" class="btn btn-dark btn-lg">Reject</a>		
+		<a href=# class="btn btn-dark btn-lg" onclick="deletebox(5)">Approve</a> 
+		<a href=# class="btn btn-dark btn-lg" onclick="deletebox(1)">Reject</a>		
 		</div>
-		<div class="apptreqbox">
+		<div class="apptreqbox" id="2">
 		<h4><b> Request to Owner </h4></b>
 		<p> Owner: John
 		<p> Pet: Max </p>
 		<p> Time/Date: 5/12/14 @ 3:00PM </p>
 		<p> Location: Old Dorms Quad </p>
-		<a href="requests.html" class="btn btn-dark btn-lg">Cancel</a>
+		<a href=# class="btn btn-dark btn-lg" onclick="deletebox(2)">Cancel</a>
 		</div>
-		<div class="apptreqbox">
+		<div class="apptreqbox" id="3">
 		<h4><b> Awaiting Seeker Confirmation </h4></b>
 		<p> Seeker: Lionel </p>
 		<p> Pet: Buddy </p>
 		<p> Time/Date: 5/16/14 @ 1:00PM </p>
 		<p> Location: Bodo's on the Corner </p>
-		<a href="requests.html" class="btn btn-dark btn-lg">Cancel</a>
+		<a href=# class="btn btn-dark btn-lg" onclick="deletebox(3)">Cancel</a>
 		</div>
-		<div class="apptreqbox">
+		<div class="apptreqbox" id="4" >
 		<h4><b> Awaiting your Confirmation </h4></b>
 		<p> Owner: Alexandra </p>
 		<p> Pet: Molly </p>
 		<p> Time/Date: 5/21/14 @ 12:00PM </p>
 		<p> Location: Nameless Field </p>
-		<a href="requests.html" class="btn btn-dark btn-lg">Confirm & Pay</a> <a href="requests.html" class="btn btn-dark btn-lg">Cancel</a>
+		<a href="http://www.paypal.com" class="btn btn-dark btn-lg">Confirm & Pay</a> <a href=# class="btn btn-dark btn-lg" onclick="deletebox(4)">Cancel</a>
 		<!-- Need Confirm & Pay button to point to the checkout page -->
-		</div>
+		</center>
 		<!-- Appointment request boxes end here -->
 		
 		<!-- /.container -->
