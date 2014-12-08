@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Stylish Portfolio - Start Bootstrap Theme</title>
+    <title>Let's Play!</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -36,10 +36,15 @@
 		function deletebox(id) {
 			if (id == 1) {
 				document.getElementById(1).innerHTML = "";
-			} else if(id == 5)	{
+			} else if(id == 2 || id ==  3 || id == 4) {
+				document.getElementById(id).innerHTML = "";
+				alert("Request has been cancelled.");
+
+			}else if(id == 5)	{
 				document.getElementById(1).innerHTML = "";
 				alert("Awaiting Payment Confirmation from Stephen");
 			}
+		}
 	</script>
 
 </head>
@@ -52,35 +57,32 @@
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             <li class="sidebar-brand">
-                <a href="#top">Start Bootstrap</a>
+                <a href="#top">Let's Play</a>
             </li>
             <li>
-                <a href="index.html">Home</a>
+                <a href="about.html">Profile</a>
             </li>
             <li>
-                <a href="#about">About</a>
+                <a href="requests.html">Requests</a>
             </li>
             <li>
-                <a href="#services">Services</a>
+                <a href="search.html">Search</a>
             </li>
             <li>
-                <a href="#portfolio">Portfolio</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
+                <a href="index.html">Log out</a>
             </li>
         </ul>
     </nav>
  
-				
+				<div class="top">
+	<h1><img src="../letsplay/img/letsplay.png" height="75px">    Lets Play!</h1>
+	</center>
+	</div>	
 
  <!-- About -->
     <section id="about" class="about">
         <div class="container">
-		<div class="top">
-	<h1><img src="../letsplay/img/letsplay.png" height="75px">    Lets Play!</h1>
-	</center>
-	</div>
+	
 		<h2 class="user">
 			<img data-src="holder.js/200x200" class="img-thumbnail" alt="200x200" src="../letsplay/img/profile-pic.jpg" data-holder-rendered="true" style="width: 60px; height: 60px;">
 			<span class="page-header">Lauren C.'s Appointment Requests</span>			
@@ -97,8 +99,8 @@
 		<p>Pet: Buddy</p>
 		<p>Time/Date: 5/9/14 @ 2:00PM</p>
 		<p>Location: The Lawn </p>
-		<a href=# class="btn btn-dark btn-lg" onclick="deletebox(5)">Approve</a> 
-		<a href=# class="btn btn-dark btn-lg" onclick="deletebox(1)">Reject</a>		
+		<a class="btn btn-dark btn-lg" onclick="deletebox(5)">Approve</a> 
+		<a class="btn btn-dark btn-lg" onclick="deletebox(1)">Reject</a>		
 		</div>
 		<div class="apptreqbox" id="2">
 		<h4><b> Request to Owner </h4></b>
@@ -106,7 +108,7 @@
 		<p> Pet: Max </p>
 		<p> Time/Date: 5/12/14 @ 3:00PM </p>
 		<p> Location: Old Dorms Quad </p>
-		<a href=# class="btn btn-dark btn-lg" onclick="deletebox(2)">Cancel</a>
+		<a class="btn btn-dark btn-lg" onclick="deletebox(2)">Cancel</a>
 		</div>
 		<div class="apptreqbox" id="3">
 		<h4><b> Awaiting Seeker Confirmation </h4></b>
@@ -114,7 +116,7 @@
 		<p> Pet: Buddy </p>
 		<p> Time/Date: 5/16/14 @ 1:00PM </p>
 		<p> Location: Bodo's on the Corner </p>
-		<a href=# class="btn btn-dark btn-lg" onclick="deletebox(3)">Cancel</a>
+		<a class="btn btn-dark btn-lg" onclick="deletebox(3)">Cancel</a>
 		</div>
 		<div class="apptreqbox" id="4" >
 		<h4><b> Awaiting your Confirmation </h4></b>
@@ -122,7 +124,7 @@
 		<p> Pet: Molly </p>
 		<p> Time/Date: 5/21/14 @ 12:00PM </p>
 		<p> Location: Nameless Field </p>
-		<a href="http://www.paypal.com" class="btn btn-dark btn-lg">Confirm & Pay</a> <a href=# class="btn btn-dark btn-lg" onclick="deletebox(4)">Cancel</a>
+		<a href="http://www.paypal.com" class="btn btn-dark btn-lg">Confirm & Pay</a> <a class="btn btn-dark btn-lg" onclick="deletebox(4)">Cancel</a>
 		<!-- Need Confirm & Pay button to point to the checkout page -->
 		</center>
 		<!-- Appointment request boxes end here -->
