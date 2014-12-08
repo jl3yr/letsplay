@@ -29,8 +29,9 @@
     <![endif]-->
 	<script type = "text/javascript">
 
-		function alertbox() {
-			alert("Seeker: Carl Banks\nPet: Buddy\nTime: 2:00PM\nLocation: Charlottesville Local Park\n");
+		function searched() {
+		document.getElementById("searchresults").innerHTML = "No pets found :("; 
+
 		}
 		
 		
@@ -94,7 +95,9 @@
 		<option value="21">More than $21</option>
 		</select>
 	<br>	<br>
-		<a href="about.html" class="btn btn-dark btn-lg">Search for a pet!</a>
+		<a id="search" onclick="searched()" class="btn btn-dark btn-lg">Search for a pet!</a>
+		<br><br><br><br>
+		<h2><div id="searchresults"></div></h2>
 		
 		</center>
 			
